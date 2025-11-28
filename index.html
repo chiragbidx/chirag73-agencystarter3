@@ -1,792 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-  <!-- Author -->
-  <meta name="author" content="BubbleXpress">
-  <!-- description -->
-  <meta name="description" content="BubbleXpress is a leading Bubble development agency focused on no-code MVPs, scalable SaaS, startup app launches, and full business workflows.">
-  <!-- keywords -->
-  <meta name="keywords" content="bubble, no-code, app development, agency, SaaS, startup, MVP, web app, mobile app, automation, workflow, rapid prototyping, Bubble.io, bubble agency, bubble specialists">
-  <!-- Page Title -->
-  <title>BubbleXpress | Bubble Development Agency</title>
-  <!-- Favicon -->
-  <link href="agency/img/favicon.ico" rel="icon">
-  <!-- Bundle -->
-  <link href="vendor/css/bundle.min.css" rel="stylesheet">
-  <link href="vendor/css/revolution-settings.min.css" rel="stylesheet">
-  <!-- Plugin Css -->
-  <link href="vendor/css/jquery.fancybox.min.css" rel="stylesheet">
-  <link href="vendor/css/owl.carousel.min.css" rel="stylesheet">
-  <link href="vendor/css/swiper.min.css" rel="stylesheet">
-  <link href="vendor/css/cubeportfolio.min.css" rel="stylesheet">
-  <!-- Style Sheet -->
-  <link href="agency/css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
 </head>
-<body data-offset="90" data-spy="scroll" data-target=".navbar">
-
-<!-- Preloader -->
-<div class="preloader">
-  <div class="box"></div>
-</div>
-<div class="cd-transition-layer visible opening">
-  <div class="bg-layer"></div>
-</div>
-<!--/Preloader -->
-
-<!--Header Start-->
-<header class="cursor-light">
-
-  <!--Navigation-->
-  <nav class="navbar navbar-top-default navbar-expand-lg navbar-gradient nav-icon alt-font">
-    <div class="container">
-      <a class="logo link scroll" href="javascript:void(0)" title="BubbleXpress Logo">
-        <img alt="BubbleXpress logo" class="logo-dark default" src="agency/img/logo-white.png">
+<body>
+  <header class="navbar">
+    <div class="container navbar-content">
+      <a href="#" class="logo">
+        <img src="https://via.placeholder.com/120x40?text=Logo" alt="Company Logo" class="logo-img">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#agency" aria-controls="agency" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </span>
-      </button>
-      <div class="collapse navbar-collapse" id="agency">
-        <div class="navbar-nav ml-auto">
-          <a class="nav-link link scroll active" href="#home">Home</a>
-          <a class="nav-link link scroll" href="#about-us">About</a>
-          <a class="nav-link link scroll" href="#portfolio">Our Work</a>
-          <a class="nav-link link scroll" href="#services">Services</a>
-          <a class="nav-link link scroll" href="#team">Team</a>
-          <a class="nav-link link scroll" href="#blog">Blog</a>
-          <a class="nav-link link scroll" href="#contact">Contact</a>
-        </div>
-        <a class="btn btn-medium btn-rounded btn-transparent-white btn-hvr-white ml-3" data-animation-duration="500" data-fancybox data-src="#animatedModal"
-        href="javascript:void(0);">Get a Bubble App Quote
-          <div class="btn-hvr-setting">
-            <ul class="btn-hvr-setting-inner">
-              <li class="btn-hvr-effect"></li>
-              <li class="btn-hvr-effect"></li>
-              <li class="btn-hvr-effect"></li>
-              <li class="btn-hvr-effect"></li>
-            </ul>
-          </div>
-        </a>
-      </div>
-      <div class="slider-social">
-        <ul class="list-unstyled">
-          <li class="animated-wrap"><a class="animated-element" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-facebook-f"></i></a></li>
-          <li class="animated-wrap"><a class="animated-element" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a></li>
-          <li class="animated-wrap"><a class="animated-element" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-x-twitter"></i></a></li>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
+      </nav>
+      <a href="#get-started" class="cta-btn">Get Started</a>
     </div>
-  </nav>
+  </header>
 
-  <!-- Removed: nav-holder main style-2 alt-font, shape-left, and associated full menu overlay -->
-
-  <!--Get Quote Modal Popup-->
-  <div class="animated-modal hidden quote-content" id="animatedModal">
-    <div class="heading-area pb-2 mx-570">
-      <span class="sub-title">BubbleXpress Agency</span>
-      <h2 class="title mt-2">Start your <span class="alt-color js-rotating">Bubble app, MVP</span> today</h2>
-    </div>
-    <form class="contact-form" id="modal-contact-form-data">
-      <div class="row">
-        <div class="col-12" id="quote_result"></div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <input class="form-control" id="quote_name" name="quoteName" placeholder="Name" required="" type="text">
-          </div>
-          <div class="form-group">
-            <input class="form-control" id="quote_contact" name="userPhone" placeholder="Contact #" required="" type="text">
-          </div>
-          <div class="form-group">
-            <input class="form-control" id="quote_type" name="projectType" placeholder="Project Type (e.g. SaaS, Marketplace)" required="" type="text">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <input class="form-control" id="quote_email" name="userEmail" placeholder="Email" required="" type="email">
-          </div>
-          <div class="form-group">
-            <input class="form-control" id="quote_address" name="userAddress" placeholder="City / Country" required="" type="text">
-          </div>
-          <div class="form-group">
-            <input class="form-control" id="quote_budget" name="quoteBudget" placeholder="Budget Estimate" required="" type="text">
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="form-group">
-            <textarea class="form-control" id="quote_message" name="userMessage" placeholder="Describe your Bubble app or idea"></textarea>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="form-check">
-            <label class="checkbox-lable">Prefer phone call
-              <input type="checkbox">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <a class="btn btn-large btn-rounded btn-blue btn-hvr-pink modal_contact_btn" href="javascript:void(0);" id="quote_submit_btn">
-            <i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Request a Quote</b>
-            <div class="btn-hvr-setting">
-              <ul class="btn-hvr-setting-inner">
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-              </ul>
-            </div>
-          </a>
-        </div>
+  <main class="main-content">
+    <section class="hero">
+      <div class="container">
+        <h1>Grow Your Business with Us</h1>
+        <p>Modern solutions for your digital success. Enhance your reach, performance, and results through simple, scalable platforms.</p>
+        <a href="#get-started" class="cta-btn large">Get Started</a>
       </div>
-    </form>
-  </div>
-</header>
-<!--Header End-->
-
-<!--Slider Start-->
-<section class="p-0 no-transition cursor-light" id="home">
-  <h2 class="d-none">Bubble Development Agency Hero</h2>
-  <div class="rev_slider_wrapper fullscreen-container" id="rev_slider_17_1_wrapper" style="background:transparent;padding:0px;">
-    <div class="rev_slider fullscreenbanner" id="rev_slider_17_1" style="display:none;">
-      <ul>
-        <li data-title="Slide" data-transition="fade">
-          <div class="gradient-bg1 bg-overlay"></div>
-          <div class="tp-caption tp-resizeme"
-            data-x="center"
-            data-y="middle"
-            data-voffset="['-125','-125','-80','-60']"
-            data-fontsize="['70','65','60','40']"
-            data-lineheight="['80','75','60','50']"
-            data-width="['800','650','500','300']"
-            data-textalign="['center','center','center','center']"
-            id="slide-43-layer-13"
-            style="z-index: 13; min-width: 650px; max-width: 800px; white-space: normal; font-size: 70px; line-height: 80px; font-weight: 800; color: #ffffff; letter-spacing: 0px; font-family:Montserrat;">
-            Build Your Dream App<br><span class="alt-color js-rotating">Without Code, With Bubble</span>
+    </section>
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <img src="https://via.placeholder.com/80" alt="Feature 1 Icon" class="feature-icon">
+            <h3>Seamless Integration</h3>
+            <p>Connect with your existing tools for effortless workflows.</p>
           </div>
-          <div class="tp-caption tp-resizeme"
-            data-x="center"
-            data-y="middle"
-            data-voffset="['10','10','60','100']"
-            data-fontsize="['24','22','18','18']"
-            data-lineheight="['36','30','28','26']"
-            data-width="['650','650','500','320']"
-            data-textalign="['center','center','center','center']"
-            id="slide-43-layer-14"
-            style="z-index: 15; min-width: 320px; max-width: 651px; white-space: normal; font-size: 22px; line-height: 30px; font-weight: 400; color: #ffffff; letter-spacing: 0px; font-family:Roboto;">
-            The fastest way to launch your SaaS, platform, marketplace or automation suite — powered 100% by Bubble and crafted by experts.
+          <div class="feature-card">
+            <img src="https://via.placeholder.com/80" alt="Feature 2 Icon" class="feature-icon">
+            <h3>Reliable Security</h3>
+            <p>Your data is protected with top industry standards.</p>
           </div>
-          <div class="tp-caption tp-resizeme"
-            data-x="center"
-            data-y="middle"
-            data-voffset="['120','120','130','170']"
-            data-width="['auto','auto','auto','auto']"
-            style="z-index: 16; white-space: nowrap;">
-            <a class="btn btn-slider btn-rounded btn-blue btn-hvr-white" href="#contact">Book a Free Consultation
-              <div class="btn-hvr-setting">
-                <ul class="btn-hvr-setting-inner">
-                  <li class="btn-hvr-effect"></li>
-                  <li class="btn-hvr-effect"></li>
-                  <li class="btn-hvr-effect"></li>
-                  <li class="btn-hvr-effect"></li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </li>
-      </ul>
-      <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-    </div>
-  </div><!-- END REVOLUTION SLIDER -->
-</section>
-<!--Slider End-->
-
-<!--About Us-->
-<section class="pb-0" id="about-us">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 wow fadeInLeft">
-        <div class="heading-area">
-          <span class="sub-title">What We Do</span>
-          <h2 class="title">We craft <span class="alt-color js-rotating">no-code, Bubble</span> solutions for startups & enterprises</h2>
-          <p class="para">BubbleXpress empowers visionaries to launch web platforms, SaaS, portals, apps, and custom workflows without code. From MVPs to complex automations, our team delivers robust apps up to 5x faster—perfect for founders, scaleups, and innovation teams.</p>
-          <a class="btn btn-large btn-rounded btn-pink btn-hvr-blue mt-3" href="javascript:void(0);">Learn More
-            <div class="btn-hvr-setting">
-              <ul class="btn-hvr-setting-inner">
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-              </ul>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-6 wow fadeInRight">
-        <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-          <img alt="vector" src="agency/img/vector-art-2.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--About Us End-->
-
-<!--Services Start-->
-<section id="services">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="process-wrapp">
-          <span class="pro-step blue"><i aria-hidden="true" class="fas fa-cubes"></i></span>
-          <h4 class="service-heading">Bubble MVP & Prototypes</h4>
-          <p>Rapid MVPs built for validation and fast feedback, tailored to your vision with user-ready polish.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="process-wrapp">
-          <span class="pro-step midnight"><i aria-hidden="true" class="fas fa-rocket"></i></span>
-          <h4 class="service-heading">Custom SaaS Development</h4>
-          <p>Build SaaS products, multi-sided platforms and CRMs on Bubble with advanced logic and scalable infra.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="process-wrapp">
-          <span class="pro-step purple"><i aria-hidden="true" class="fas fa-puzzle-piece"></i></span>
-          <h4 class="service-heading">API, Automation & Integrations</h4>
-          <p>Connect external tools, automate workflows, and supercharge your app with Bubble API integrations.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="process-wrapp">
-          <span class="pro-step pink"><i aria-hidden="true" class="fas fa-trophy"></i></span>
-          <h4 class="service-heading">UX/UI Design for No-Code Apps</h4>
-          <p>Top-tier UI/UX design for Bubble apps, delivering user delight and best-in-class digital experiences.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Services End-->
-
-<!--Counters Start-->
-<section class="gradient-bg2" id="counters">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 pl-lg-4 order-lg-2 wow fadeInRight">
-        <div class="heading-area">
-          <span class="sub-title text-white">Our Impact</span>
-          <h2 class="title text-white">Over <span class="js-rotating">120 apps, 55 startups</span> launched with Bubble</h2>
-          <p class="para text-white">Trusted by global founders and enterprises, we deliver robust, scalable, and beautiful apps with Bubble. Experience faster time-to-market with clear pricing.</p>
-        </div>
-        <ul class="counter-list list-unstyled">
-          <li class="counter-item">
-            <i aria-hidden="true" class="fas fa-users text-white"></i>
-            <h6 class="counter-number text-white"><span class="count">150</span>+</h6>
-            <p class="sub-title text-white">Happy Clients</p>
-          </li>
-          <li class="counter-item">
-            <i aria-hidden="true" class="fas fa-project-diagram text-white"></i>
-            <h6 class="counter-number text-white"><span class="count">120</span>+</h6>
-            <p class="sub-title text-white">Bubble Apps Launched</p>
-          </li>
-          <li class="counter-item">
-            <i aria-hidden="true" class="fas fa-clock text-white"></i>
-            <h6 class="counter-number text-white"><span class="count">5</span>x</h6>
-            <p class="sub-title text-white">Faster Delivery</p>
-          </li>
-        </ul>
-      </div>
-      <div class="col-lg-6 wow fadeInLeft">
-        <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-          <img alt="vector" src="agency/img/vector-art-3.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Counters End-->
-
-<!--Team Start-->
-<section class="text-center" id="team">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="heading-area mx-570 mb-5">
-          <span class="sub-title">Meet Our Team</span>
-          <h2 class="title">Bubble-Certified <span class="alt-color js-rotating">Developers, Designers</span> & Product Experts</h2>
-          <p class="para">Our passionate team blends Bubble mastery, UI/UX excellence and startup business acumen to lift your vision into a polished live product—fast.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row wow fadeInUp">
-      <div class="col-md-4">
-        <div class="team-item">
-          <img alt="Lead Bubble Developer" class="team-image" src="agency/img/team-img1.png">
-          <div class="name">
-            <img alt="shape" src="agency/img/shape-10.png">
-            <h6>Alex Bubblewood</h6>
-          </div>
-          <p class="designation mb-2">Lead Bubble Developer</p>
-          <div class="team-social social-icon-bg-hvr">
-            <a href="#"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i aria-hidden="true" class="fab fa-x-twitter"></i></a>
-            <a href="#"><i aria-hidden="true" class="fab fa-github"></i></a>
+          <div class="feature-card">
+            <img src="https://via.placeholder.com/80" alt="Feature 3 Icon" class="feature-icon">
+            <h3>Real-time Analytics</h3>
+            <p>Monitor performance and get actionable insights instantly.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="team-item">
-          <img alt="Head of Product" class="team-image" src="agency/img/team-img2.png">
-          <div class="name">
-            <img alt="shape" src="agency/img/shape-9.png">
-            <h6>Nina Workflow</h6>
-          </div>
-          <p class="designation mb-2">Head of Product</p>
-          <div class="team-social social-icon-bg-hvr">
-            <a href="#"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i aria-hidden="true" class="fab fa-x-twitter"></i></a>
-            <a href="#"><i aria-hidden="true" class="fab fa-github"></i></a>
-          </div>
-        </div>
+    </section>
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Founded in 2022, we empower businesses to embrace digital transformation through innovative SaaS solutions. Our passionate team ensures your goals are achieved swiftly and efficiently.</p>
       </div>
-      <div class="col-md-4">
-        <div class="team-item">
-          <img alt="UI/UX Designer" class="team-image" src="agency/img/team-img3.png">
-          <div class="name">
-            <img alt="shape" src="agency/img/shape-11.png">
-            <h6>Mia Interface</h6>
-          </div>
-          <p class="designation mb-2">UI/UX Designer</p>
-          <div class="team-social social-icon-bg-hvr">
-            <a href="#"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i aria-hidden="true" class="fab fa-x-twitter"></i></a>
-            <a href="#"><i aria-hidden="true" class="fab fa-behance"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Team End-->
-
-<!--Parallax/Why Us Start-->
-<section class="bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 wow fadeInLeft">
-        <div class="heading-area">
-          <span class="sub-title">Why Bubble + Us?</span>
-          <h2 class="title"><span class="main-color js-rotating">Lightning Fast Launch</span> with Quality & Flexibility</h2>
-          <p class="para">We guide you from idea to prototype to a market-ready product, using battle-tested Bubble best practices. Zero-code lock-in. Full transparency. Pay only for shipped value—no surprises.</p>
-          <a class="btn btn-large btn-rounded btn-blue btn-hvr-pink mt-3" href="#contact">Get a Bubble Roadmap
-            <div class="btn-hvr-setting">
-              <ul class="btn-hvr-setting-inner">
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-                <li class="btn-hvr-effect"></li>
-              </ul>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-6 wow fadeInRight">
-        <div class="half-img mt-5 pt-4 mt-lg-0 pt-lg-0">
-          <img alt="no-code development" src="agency/img/vector-art-4.png">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Parallax/Why Us End-->
-
-<!--Portfolio Start-->
-<section class="cube-portfolio1 text-center no-transition" id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="heading-area mx-570 mb-lg-4 mb-3">
-          <span class="sub-title">Sample Projects</span>
-          <h2 class="title">Recent <span class="alt-color js-rotating">Bubble Apps</span> from our Studio</h2>
-          <p class="para">Explore Bubble MVPs, SaaS launches, directories, marketplace and workflow engines built for global clients—fast, scalable, beautiful.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row wow fadeIn">
-      <div class="col-md-12">
-        <div class="cbp-l-filters-button" id="js-filters-mosaic-flat">
-          <div class="cbp-filter-item-active cbp-filter-item" data-filter="*">All</div>
-          <span class="text-blue">/</span>
-          <div class="cbp-filter-item" data-filter=".platform">Platforms</div>
-          <span class="text-blue">/</span>
-          <div class="cbp-filter-item" data-filter=".saas">SaaS Apps</div>
-          <span class="text-blue">/</span>
-          <div class="cbp-filter-item" data-filter=".marketplace">Marketplaces</div>
-          <span class="text-blue">/</span>
-          <div class="cbp-filter-item" data-filter=".automation">Automation</div>
-        </div>
-        <div class="cbp cbp-l-grid-mosaic-flat" id="js-grid-mosaic-flat">
-          <div class="cbp-item platform saas">
-            <a class="cbp-caption cbp-lightbox" href="agency/img/work-1.jpg">
-              <div class="cbp-caption-defaultWrap">
-                <img alt="port-1" src="agency/img/work-1.jpg">
-              </div>
-              <div class="cbp-caption-activeWrap"></div>
-              <div class="cbp-l-caption-alignCenter center-block">
-                <div class="cbp-l-caption-body">
-                  <div class="plus"></div>
-                  <h5 class="text-white mb-1">Startup MVP</h5>
-                  <p class="text-white">Bubble prototype for fintech marketplace</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="cbp-item saas">
-            <a class="cbp-caption cbp-lightbox" href="agency/img/work-2.jpg">
-              <div class="cbp-caption-defaultWrap">
-                <img alt="port-2" src="agency/img/work-2.jpg">
-              </div>
-              <div class="cbp-caption-activeWrap"></div>
-              <div class="cbp-l-caption-alignCenter center-block">
-                <div class="cbp-l-caption-body">
-                  <div class="plus"></div>
-                  <h5 class="text-white mb-1">SaaS Onboarding Engine</h5>
-                  <p class="text-white">No-code solution for HR onboarding flows</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="cbp-item marketplace saas">
-            <a class="cbp-caption cbp-lightbox" href="agency/img/work-3.jpg">
-              <div class="cbp-caption-defaultWrap">
-                <img alt="port-3" src="agency/img/work-3.jpg">
-              </div>
-              <div class="cbp-caption-activeWrap"></div>
-              <div class="cbp-l-caption-alignCenter center-block">
-                <div class="cbp-l-caption-body">
-                  <div class="plus"></div>
-                  <h5 class="text-white mb-1">Custom Marketplace</h5>
-                  <p class="text-white">Peer-to-peer rental built on Bubble</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="cbp-item automation">
-            <a class="cbp-caption cbp-lightbox" href="agency/img/work-4.jpg">
-              <div class="cbp-caption-defaultWrap">
-                <img alt="port-4" src="agency/img/work-4.jpg">
-              </div>
-              <div class="cbp-caption-activeWrap"></div>
-              <div class="cbp-l-caption-alignCenter center-block">
-                <div class="cbp-l-caption-body">
-                  <div class="plus"></div>
-                  <h5 class="text-white mb-1">Workflow Integrator</h5>
-                  <p class="text-white">Automated multi-step processes with APIs</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="cbp-item platform marketplace">
-            <a class="cbp-caption cbp-lightbox" href="agency/img/work-5.jpg">
-              <div class="cbp-caption-defaultWrap">
-                <img alt="port-5" src="agency/img/work-5.jpg">
-              </div>
-              <div class="cbp-caption-activeWrap"></div>
-              <div class="cbp-l-caption-alignCenter center-block">
-                <div class="cbp-l-caption-body">
-                  <div class="plus"></div>
-                  <h5 class="text-white mb-1">Directory Platform</h5>
-                  <p class="text-white">Local business listing & search</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Portfolio End-->
-
-<!--Testimonial Start-->
-<section class="gradient-bg1 text-center" id="clients">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="heading-area mx-570 mb-5">
-          <h2 class="title text-white m-0">What Our <span class="js-rotating">Clients Say</span> About BubbleXpress</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="owl-carousel wow zoomIn" id="testimonial-slider">
-          <div class="item">
-            <p class="para">Launching our SaaS on Bubble was easy with BubbleXpress. Their process is seamless and the result exceeded all our scalability needs. Highly recommend for any non-technical founder!</p>
-            <h5 class="name gradient-text1">Sophia Y.</h5>
-            <span class="designation">Co-founder, QuickHire</span>
-            <ul class="ratings list-unstyled">
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
+    </section>
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <h2>Pricing</h2>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Basic</h3>
+            <p class="price">$19/mo</p>
+            <ul>
+              <li>Essential features</li>
+              <li>Email support</li>
+              <li>Single user</li>
             </ul>
+            <a href="#" class="cta-btn">Choose Basic</a>
           </div>
-          <div class="item">
-            <p class="para">We delivered a full-featured marketplace in 8 weeks. BubbleXpress guided us every step of the way—superb design, world-class logic and post-launch support.</p>
-            <h5 class="name gradient-text1">Leo B.</h5>
-            <span class="designation">Product Lead, MyRentals</span>
-            <ul class="ratings list-unstyled">
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
+          <div class="price-card most-popular">
+            <h3>Pro</h3>
+            <p class="price">$49/mo</p>
+            <ul>
+              <li>All Basic features</li>
+              <li>Premium support</li>
+              <li>Up to 10 users</li>
             </ul>
+            <a href="#" class="cta-btn">Choose Pro</a>
           </div>
-          <div class="item">
-            <p class="para">Our corporate workflow automation has never been smoother. The team delivered on time and offered creative Bubble solutions every sprint. Loved the ongoing insights!</p>
-            <h5 class="name gradient-text1">Amy Z.</h5>
-            <span class="designation">Innovation Manager, Enterwise</span>
-            <ul class="ratings list-unstyled">
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
-              <li><i aria-hidden="true" class="fas fa-star"></i></li>
+          <div class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price">$99/mo</p>
+            <ul>
+              <li>All Pro features</li>
+              <li>Dedicated manager</li>
+              <li>Unlimited users</li>
             </ul>
+            <a href="#" class="cta-btn">Choose Enterprise</a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="owl-dots" id="testimonials-avatar">
-      <button class="owl-dot active"><img alt="image" src="agency/img/avatar-1.png"></button>
-      <button class="owl-dot"><img alt="image" src="agency/img/avatar-2.png"></button>
-      <button class="owl-dot"><img alt="image" src="agency/img/avatar-3.png"></button>
-    </div>
-  </div>
-</section>
-<!--Testimonial End-->
-
-<!--Blog Start-->
-<section class="bg-light" id="blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <div class="heading-area mx-570 pb-lg-5 mb-5">
-          <span class="sub-title">Learn No-Code</span>
-          <h2 class="title mb-0">Latest <span class="alt-color js-rotating">Bubble Tips, Case Studies</span> & News</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row wow fadeInUp">
-      <div class="col-lg-4">
-        <div class="news-item">
-          <img alt="Bubble no-code MVP blog" class="news-img" src="agency/img/blog-news-1.jpg">
-          <div class="news-text-box">
-            <span class="date main-color">April 12, 2024</span>
-            <a href="#"><h4 class="news-title">How Bubble Accelerates Startup MVPs</h4></a>
-            <p class="para">See how Bubble founders move from idea to investment-ready MVPs—with lessons from real startup launches.</p>
-            <a class="author d-flex align-items-center" href="#"><img alt="author" class="author-img bg-blue" src="agency/img/avatar-1.png">
-              <h5 class="author-name">Nina Workflow</h5>
-            </a>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="news-item">
-          <img alt="Bubble app design" class="news-img" src="agency/img/blog-news-2.jpg">
-          <div class="news-text-box">
-            <span class="date main-color">March 22, 2024</span>
-            <a href="#"><h4 class="news-title">UX/UI for No-Code: Bubble Best Practices</h4></a>
-            <p class="para">Discover proven techniques to deliver beautiful, user-friendly interfaces on Bubble—no code required!</p>
-            <a class="author d-flex align-items-center" href="#">
-              <img alt="author" class="author-img bg-purple" src="agency/img/avatar-2.png">
-              <h5 class="author-name">Mia Interface</h5>
-            </a>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="news-item">
-          <img alt="Bubble API automation tutorial" class="news-img" src="agency/img/blog-news-3.jpg">
-          <div class="news-text-box">
-            <span class="date main-color">Feb 07, 2024</span>
-            <a href="#"><h4 class="news-title">Integrating APIs in Bubble: 2024 Guide</h4></a>
-            <p class="para">A step-by-step walkthrough for connecting third-party services, automating flows and unlocking superpowers in Bubble.</p>
-            <a class="author d-flex align-items-center" href="#">
-              <img alt="author" class="author-img bg-pink" src="agency/img/avatar-5.png">
-              <h5 class="author-name">Alex Bubblewood</h5>
-            </a>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Blog End-->
-
-<!--Client Map-->
-<section class="gradient-bg2" id="client">
-  <h2 class="d-none">Client Logos</h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="owl-carousel partners-slider">
-          <div class="logo-item"><img alt="client-logo" src="agency/img/client-1.png"></div>
-          <div class="logo-item"><img alt="client-logo" src="agency/img/client-2.png"></div>
-          <div class="logo-item"><img alt="client-logo" src="agency/img/client-3.png"></div>
-          <div class="logo-item"><img alt="client-logo" src="agency/img/client-4.png"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Client End-->
-
-<!--Map Start-->
-<div class="p-0 gradient-bg2 map-area">
-  <div class="container">
-    <div class="full-map" id="map"></div>
-  </div>
-</div>
-<!--Map End-->
-
-<!--Contact Start-->
-<section class="contact-us" id="contact">
-  <div class="container">
-    <div class="row align-items-top">
-      <div class="col-lg-5 order-lg-2 wow fadeInRight">
-        <div class="contact-detail">
-          <div class="contact-dots" data-dots=""></div>
-          <div class="heading-area pb-5">
-            <h2 class="title mt-0 pb-1">Let's Build Your Bubble App</h2>
-            <p class="para">Ready to discuss your idea, MVP, or workflow solution? Drop us a line and let's get started with Bubble.</p>
-          </div>
-          <ul class="address list-unstyled">
-            <li>
-              <span class="address-icon gradient-text2"><i aria-hidden="true" class="fas fa-map-marker-alt"></i></span>
-              <span class="address-text">100 NoCode Ave, Remote-First, Global</span>
-            </li>
-            <li>
-              <span class="address-icon gradient-text2"><i aria-hidden="true" class="fas fa-phone-volume"></i></span>
-              <span class="address-text"><a class="mr-3" href="tel:+1234567890">+1 234 567 890</a></span>
-            </li>
-            <li>
-              <span class="address-icon gradient-text2"><i aria-hidden="true" class="fas fa-paper-plane"></i></span>
-              <span class="address-text"><a class="mr-3 alt-color" href="mailto:contact@bubblexpress.com">contact@bubblexpress.com</a></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-7 mt-4 pt-3 mt-lg-0 pt-lg-0 wow fadeInLeft">
-        <div class="heading-area pb-2">
-          <h2 class="title mt-0">Contact the Bubble Experts</h2>
-        </div>
-        <form class="contact-form" id="contact-form-data">
-          <div class="row">
-            <div class="col-12" id="result"></div>
-            <div class="col-md-5">
-              <div class="form-group">
-                <input class="form-control" id="your_name" name="userName" placeholder="Name" required="" type="text">
-              </div>
-              <div class="form-group">
-                <input class="form-control" id="your_email" name="userEmail" placeholder="Email" required="" type="email">
-              </div>
-              <div class="form-group">
-                <input class="form-control" id="subject" name="userSubject" placeholder="Subject" required="" type="text">
-              </div>
-            </div>
-            <div class="col-md-7">
-              <div class="form-group">
-                <textarea class="form-control" id="message" name="userMessage"
-                  placeholder="Tell us about your project or question"></textarea>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <a class="btn btn-large btn-rounded btn-purple btn-hvr-blue d-block mt-4 contact_btn" href="javascript:void(0);"
-                id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i><b>Send Message</b>
-                <div class="btn-hvr-setting">
-                  <ul class="btn-hvr-setting-inner">
-                    <li class="btn-hvr-effect"></li>
-                    <li class="btn-hvr-effect"></li>
-                    <li class="btn-hvr-effect"></li>
-                    <li class="btn-hvr-effect"></li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
+          <button type="submit" class="cta-btn">Send Message</button>
         </form>
       </div>
-    </div>
-  </div>
-</section>
-<!--Contact End-->
+    </section>
+  </main>
 
-<!--Footer Start-->
-<footer class="footer-style-1 bg-light">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="footer-social">
-          <ul class="list-unstyled">
-            <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true"
-                class="fab fa-facebook-f"></i></a></li>
-            <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true"
-                class="fab fa-x-twitter"></i></a></li>
-            <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true"
-                class="fab fa-linkedin-in"></i></a></li>
-            <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true"
-                class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 text-md-right">
-        <p class="company-about fadeIn">&copy; 2024 BubbleXpress. No-Code Built, Agency Powered.
-          <a href="javascript:void(0);">Bubble Specialists</a>
-        </p>
-      </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Company Name. All rights reserved.</p>
     </div>
-  </div>
-</footer>
-<!--Footer End-->
-
-<div id="aimated-cursor">
-  <div id="cursor">
-    <div id="cursor-loader"></div>
-  </div>
-</div>
-<span class="scroll-top-arrow"><i class="fas fa-angle-up"></i></span>
-<!-- JavaScript -->
-<script src="vendor/js/bundle.min.js"></script>
-<script src="vendor/js/jquery.appear.js"></script>
-<script src="vendor/js/jquery.fancybox.min.js"></script>
-<script src="vendor/js/owl.carousel.min.js"></script>
-<script src="vendor/js/swiper.min.js"></script>
-<script src="vendor/js/morphext.min.js"></script>
-<script src="vendor/js/TweenMax.min.js"></script>
-<script src="vendor/js/wow.min.js"></script>
-<script src="vendor/js/jquery.cubeportfolio.min.js"></script>
-<script src="vendor/js/jquery.themepunch.tools.min.js"></script>
-<script src="vendor/js/jquery.themepunch.revolution.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="vendor/js/extensions/revolution.extension.video.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJRG4KqGVNvAPY4UcVDLcLNXMXk2ktNfY"></script>
-<script src="agency/js/map.js"></script>
-<script src="vendor/js/contact_us.js"></script>
-<script src="agency/js/script.js"></script>
+  </footer>
 </body>
 </html>
